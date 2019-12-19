@@ -25,6 +25,7 @@ public class MyArrayList {
     public void clear(){
         int [] i = null;
         values = i;
+        count = 0;
     }
 
 
@@ -34,9 +35,11 @@ public class MyArrayList {
 
     public void printValues(){
         //int[] val = getValues();
-        for (int i : values) {
-            System.out.print(i + " ");
+        if (count > 0) {
+            for (int i : values) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
         }
-        System.out.println();
     }
 }
